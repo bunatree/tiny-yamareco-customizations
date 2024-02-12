@@ -14,7 +14,6 @@
 
   const imgWidth = 176;
   const imgHeight = 176;
-  const galleryStyle = 'flex';
   const enableTextShadow = true;
   const textShadow = '0 0 2px black';
 
@@ -49,21 +48,15 @@
 
   };
 
-
   window.addEventListener('load', () => {
-
     const galleryElm = document.querySelector('div.photo-list-wrap');
-
     if (galleryElm) {
-      // Replace the image and reset its width and height.
       tinyYamarecoCustomizations.resetImageAll(galleryElm);
       if (enableTextShadow) {
-        // Add a text shadow to each time stamp.
         tinyYamarecoCustomizations.setTextShadowAll(galleryElm);
       }
     }
   });
-
 
 })();
 
